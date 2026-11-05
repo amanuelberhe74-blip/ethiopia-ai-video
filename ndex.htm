@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ETHIOPIA AI VIDEO</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#080d18;color:white;
+ font-family:Arial,sans-serif;padding:18px
+}
+header{text-align:center;padding:25px 5px}
+h1{color:#42d9ff;margin-bottom:8px}
+.card{
+ background:#142139;padding:18px;
+ border-radius:15px;margin:15px 0
+}
+label{display:block;margin:15px 0 7px}
+textarea,select{
+ width:100%;padding:13px;border-radius:9px;
+ border:1px solid #40516d;background:#091426;
+ color:white;font-size:16px
+}
+button{
+ width:100%;padding:14px;border:0;
+ border-radius:10px;background:#08a9e9;
+ color:white;font-size:17px;font-weight:bold;
+ margin-top:18px
+}
+.credit{color:#55e6a5;font-weight:bold}
+small{color:#b6c4d8}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🇪🇹 ETHIOPIA AI VIDEO</h1>
+<p>Create amazing AI videos from your imagination</p>
+</header>
+
+<div class="card">
+<h2>My Credits</h2>
+<h1 class="credit">100 Credits</h1>
+<p>Daily free credits</p>
+</div>
+
+<div class="card">
+<h2>🎬 Create Your Video</h2>
+
+<label>Describe your video</label>
+<textarea id="prompt" rows="4"
+placeholder="Example: A lion and an elephant playing in a forest..."></textarea>
+
+<label>Video Duration</label>
+<select id="duration">
+<option value="20">5 Seconds - 20 Credits</option>
+<option value="40">10 Seconds - 40 Credits</option>
+<option value="60">15 Seconds - 60 Credits</option>
+<option value="80">20 Seconds - 80 Credits</option>
+</select>
+
+<label>Video Quality</label>
+<select id="quality">
+<option value="1">Standard</option>
+<option value="1.5">HD</option>
+<option value="2">Full HD</option>
+</select>
+
+<button onclick="generate()">Generate Video</button>
+<p id="status"><small>Choose your settings and describe your video.</small></p>
+</div>
+
+<div class="card">
+<h3>About</h3>
+<p>ETHIOPIA AI VIDEO</p>
+<p>Imagine it. Create it.</p>
+</div>
+
+<script>
+function generate(){
+ const prompt=document.getElementById("prompt").value.trim();
+ const status=document.getElementById("status");
+ if(!prompt){
+  status.textContent="Please describe your video first.";
+  return;
+ }
+ status.textContent="AI video generation will be connected in the next step.";
+}
+</script>
+
+</body>
+</html>
